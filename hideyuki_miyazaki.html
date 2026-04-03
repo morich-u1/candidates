@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>候補者｜morich ご推薦</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--red:#C8253A;--red-light:#f7e8ea;--red-mid:#e8c0c6;--red-dark:#8f1528;--rose:#fdf2f3;--warm:#fffaf9;--text:#2a1a1c;--text-mid:#7a5058;--text-light:#b08890;--border:rgba(200,37,58,0.15);--bsoft:rgba(200,37,58,0.08);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--warm);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:28px 16px 40px;}
+.page-header{width:100%;max-width:640px;display:flex;align-items:center;gap:7px;margin-bottom:20px;}
+.logo-m{width:26px;height:26px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Noto Serif JP',serif;font-size:10px;}
+.logo-t{font-family:'Noto Serif JP',serif;font-size:14px;color:var(--red);letter-spacing:2px;}
+.card-wrap{width:100%;max-width:640px;background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 2px 20px rgba(200,37,58,0.07);}
+.c-header{background:linear-gradient(135deg,#C8253A 0%,#e05a6e 100%);padding:0 0 16px;position:relative;overflow:hidden;}
+.c-header::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,0.06);}
+.name-band{background:rgba(255,255,255,0.97);padding:18px 22px 14px;display:flex;align-items:center;gap:14px;position:relative;}
+.avatar{width:52px;height:52px;border-radius:50%;background:var(--red-light);border:2px solid var(--red-mid);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:15px;color:var(--red);flex-shrink:0;}
+.hname{font-family:'Noto Serif JP',serif;font-size:21px;font-weight:500;color:var(--text);letter-spacing:1.5px;line-height:1.2;}
+.hname-kana{font-size:12px;color:var(--text-mid);margin-top:3px;}
+.hname-meta{font-size:11.5px;color:var(--text-light);margin-top:2px;}
+.ctags-wrap{padding:12px 22px 0;position:relative;}
+.ctags{display:flex;flex-wrap:wrap;gap:5px;}
+.ctag{font-size:10.5px;padding:3px 10px;border-radius:20px;background:rgba(255,255,255,0.18);color:rgba(255,255,255,0.95);border:1px solid rgba(255,255,255,0.3);}
+.c-body{padding:18px 22px;}
+.cs{margin-bottom:15px;}.cs:last-child{margin-bottom:0;}
+.csl{font-size:9.5px;font-weight:500;color:var(--red);letter-spacing:1.5px;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.csl::after{content:'';flex:1;height:1px;background:var(--red-mid);}
+.chips{display:flex;flex-wrap:wrap;gap:7px;}
+.chip{background:var(--rose);border:1px solid var(--border);border-radius:7px;padding:7px 11px;font-size:12px;}
+.chip-l{color:var(--text-light);font-size:10px;margin-bottom:2px;}.chip-v{font-weight:500;color:var(--text);}
+.career-list,.alist{display:flex;flex-direction:column;gap:5px;}
+.crow{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.6;}
+.cdot{width:5px;height:5px;border-radius:50%;background:var(--red-mid);flex-shrink:0;margin-top:7px;}
+.aitem{background:var(--rose);border-left:3px solid var(--red);border-radius:0 7px 7px 0;padding:8px 11px;font-size:12.5px;line-height:1.6;}
+.schips{display:flex;flex-wrap:wrap;gap:5px;}
+.schip{font-size:11px;padding:4px 10px;border-radius:20px;background:#fff;border:1px solid var(--border);color:var(--text-mid);}
+.rbox{background:var(--rose);border-radius:9px;padding:13px;border:1px solid var(--bsoft);}
+.rsbox{background:#fff;border-radius:9px;padding:13px;border:1px solid var(--border);}
+.rbox p,.rsbox p{font-size:12.5px;line-height:1.85;color:var(--text);}
+.cdiv{border:none;border-top:1px solid var(--bsoft);margin:13px 0;}
+.c-footer{border-top:1px solid var(--bsoft);padding:12px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;background:var(--rose);}
+.cons-info{display:flex;align-items:center;gap:9px;}
+.cons-av{width:30px;height:30px;border-radius:50%;background:var(--red-light);border:1px solid var(--red-mid);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:500;color:var(--red);}
+.cname-t{font-size:12.5px;font-weight:500;}.ccontact-t{font-size:10.5px;color:var(--text-light);margin-top:1px;}
+.mbadge{display:flex;align-items:center;gap:5px;}
+.mbadge-m{width:18px;height:18px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Noto Serif JP',serif;font-size:8px;}
+.mbadge-t{font-family:'Noto Serif JP',serif;font-size:11px;color:var(--red);letter-spacing:1.5px;}
+.doclink{font-size:12px;font-weight:500;color:#fff;background:var(--red);text-decoration:none;display:flex;align-items:center;gap:5px;padding:7px 13px;border-radius:7px;}
+.page-footer{margin-top:14px;font-size:11px;color:var(--text-light);text-align:center;}
+</style>
+</head>
+<body>
+<div class="page-header">
+  <div class="logo-m">m</div>
+  <div class="logo-t">morich</div>
+</div>
+<div class="card-wrap">
+  <div class="c-header">
+    <div class="name-band">
+      <div class="avatar">　</div>
+      <div>
+        <div class="hname"></div>
+        
+        
+      </div>
+    </div>
+    <div class="ctags-wrap"><div class="ctags"><span class="ctag">経営幹部・COO経験</span><span class="ctag">事業再生・V字回復</span><span class="ctag">JV設立・新規事業</span><span class="ctag">デジタル広告・メディア</span><span class="ctag">大手アライアンス構築</span></div></div>
+  </div>
+  <div class="c-body">
+    <div class="cs"><div class="csl">基本情報</div><div class="chips"><div class="chip"><div class="chip-l">現職</div><div class="chip-v">株式会社オールアバウト</div></div><div class="chip"><div class="chip-l">役職</div><div class="chip-v">取締役（マーケティングソリューションセグメント管掌）</div></div></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">略歴</div><div class="career-list"><div class="crow"><div class="cdot"></div><div>株式会社ピーエイ（東証上場）に新卒入社。ITエンジニア特化の人材紹介・求人広告営業でトップセールスを経験</div></div><div class="crow"><div class="cdot"></div><div>2003年、株式会社オールアバウト（東証スタンダード上場）に第二新卒で入社。営業を経て、2006年より電通・博報堂・CyberAgent等の大手広告代理店向け営業・広告商品開発を担う企画推進部門へ</div></div><div class="crow"><div class="cdot"></div><div>2009年マネージャー、2014年GMに昇進。Facebookジャパン・電通と国内Facebookユーザー拡大プロジェクトを主導し、自社Facebookページのフォロワーを500万人規模に育成</div></div><div class="crow"><div class="cdot"></div><div>子会社「株式会社オールアバウトナビ」の代表取締役社長に就任。大手広告会社との合弁会社設立・事業ピボットを主導し、設立4年で企業価値を約18.3倍に引き上げ</div></div><div class="crow"><div class="cdot"></div><div>2020年よりオールアバウト本体の取締役としてマーケティングソリューションセグメント（3社・約100名）を管掌。実質COOとして構造改革・集中投下戦略を推進し、2025年6月末任期満了にて退任予定</div></div></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">主な実績</div><div class="alist"><div class="aitem">オールアバウトナビを設立からわずか4年で企業価値約18.3倍に向上。7期連続黒字・2020年度過去最高売上を達成</div><div class="aitem">大手民放キー局との資本業務提携を主導し、親会社へ出資金の約5倍の売却益を還元</div><div class="aitem">Facebookジャパン・電通との協業プロジェクトを主導し、自社運営Facebookページのフォロワーを500万人規模に育成</div><div class="aitem">AI台頭・プラットフォーム変動による業績下落（2023年）から金融領域への集中投下等の戦略転換を実行し、2024年に前年比約2.7倍（270%）の営業利益V字回復を達成</div><div class="aitem">マーケティングソリューションセグメント3社・約100名を取締役として統括。組織再編・次世代リーダー育成を推進し、後任体制の構築まで完遂</div><div class="aitem">電通・博報堂・CyberAgent・オプト等の大手広告代理店との戦略的アライアンスを構築し、後の資本提携の礎となる強固なリレーションを確立</div></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">スキル</div><div class="schips"><span class="schip">事業経営・新規事業立ち上げ（ゼロベースのJV設立から急成長牽引まで）</span><span class="schip">事業再生・構造改革・収益改善（AI・プラットフォーム変動下でのV字回復）</span><span class="schip">資本政策・ファイナンス（JV設立交渉・第三者割当増資・バリュエーション向上・出資リターン最大化）</span><span class="schip">ステークホルダーマネジメント（大手通信キャリア・民放局・広告代理店・株主対応）</span><span class="schip">メディア・デジタル広告・SNSマーケティング・コンテンツビジネス</span><span class="schip">組織開発・次世代リーダー育成・権限委譲型マネジメント</span><span class="schip">上場会社取締役としての投資家・株主への説明責任遂行</span></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">推薦ポイント</div><div class="rbox"><p>「ゼロからのJV立ち上げ・急成長」と「AI・プラットフォーム変動という逆境下での事業再生」という、難易度も性質も異なる両フェーズを実際にやり遂げてきた、希少性の高い経営人材です。Facebookジャパン・電通・大手民放局・通信キャリアといった巨大プレイヤーとの折衝・合意形成を数多く経験されており、大企業とも対等に渡り合える交渉力と信頼構築力は際立つものがあります。上場会社の取締役として投資家・株主への説明責任も果たしてきた経歴から、経営ボードメンバーとして即座に機能できる地力をお持ちです。また、後任リーダーの育成を完了させたうえで退任を決断されている点に、組織人としての誠実さと成熟したプロフェッショナリズムを感じます。次なるステージで事業を力強く牽引できる方と確信しており、ぜひ一度お会いいただきたい一人です。</p></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">転職理由</div><div class="rsbox"><p>2025年6月末の取締役任期満了が直接の契機。AI台頭・プラットフォーム変動への戦略転換によるV字回復の実現と後任リーダー育成の完了をもって、一つのミッションを全うしたと判断しての退任。引き続き「経営ボードメンバーとして事業を動かす仕事」を志向し、自身の経験が最大限に活きるフィールドを求めて転職活動を開始。</p></div></div>
+  </div>
+  <div class="c-footer">
+    
+    <div class="cons-info">
+      <div class="cons-av">賀子</div>
+      <div>
+        <div class="cname-t">森本千賀子</div>
+        <div class="ccontact-t">080-4366-8640</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a class="doclink" href="https://drive.google.com/drive/folders/1oa7fTT9erudIRc-fByzmKK3idk1Jj69c" target="_blank"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>履歴書・職務経歴書</a>
+      <div class="mbadge"><div class="mbadge-m">m</div><div class="mbadge-t">morich</div></div>
+    </div>
+  </div>
+</div>
+<div class="page-footer">このページはmorichからのご推薦資料です。取り扱いにご注意ください。</div>
+</body>
+</html>
