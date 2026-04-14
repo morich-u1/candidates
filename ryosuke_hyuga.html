@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>日向亮介様｜morich ご推薦</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--red:#C8253A;--red-light:#f7e8ea;--red-mid:#e8c0c6;--red-dark:#8f1528;--rose:#fdf2f3;--warm:#fffaf9;--text:#2a1a1c;--text-mid:#7a5058;--text-light:#b08890;--border:rgba(200,37,58,0.15);--bsoft:rgba(200,37,58,0.08);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--warm);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:28px 16px 40px;}
+.page-header{width:100%;max-width:640px;display:flex;align-items:center;gap:7px;margin-bottom:20px;}
+.logo-m{width:26px;height:26px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Noto Serif JP',serif;font-size:10px;}
+.logo-t{font-family:'Noto Serif JP',serif;font-size:14px;color:var(--red);letter-spacing:2px;}
+.card-wrap{width:100%;max-width:640px;background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 2px 20px rgba(200,37,58,0.07);}
+.c-header{background:linear-gradient(135deg,#C8253A 0%,#e05a6e 100%);padding:0 0 16px;position:relative;overflow:hidden;}
+.c-header::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,0.06);}
+.name-band{background:rgba(255,255,255,0.97);padding:18px 22px 14px;display:flex;align-items:center;gap:14px;position:relative;}
+.avatar{width:52px;height:52px;border-radius:50%;background:var(--red-light);border:2px solid var(--red-mid);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;font-size:15px;color:var(--red);flex-shrink:0;}
+.hname{font-family:'Noto Serif JP',serif;font-size:21px;font-weight:500;color:var(--text);letter-spacing:1.5px;line-height:1.2;}
+.hname-kana{font-size:12px;color:var(--text-mid);margin-top:3px;}
+.hname-meta{font-size:11.5px;color:var(--text-light);margin-top:2px;}
+.ctags-wrap{padding:12px 22px 0;position:relative;}
+.ctags{display:flex;flex-wrap:wrap;gap:5px;}
+.ctag{font-size:10.5px;padding:3px 10px;border-radius:20px;background:rgba(255,255,255,0.18);color:rgba(255,255,255,0.95);border:1px solid rgba(255,255,255,0.3);}
+.c-body{padding:18px 22px;}
+.cs{margin-bottom:15px;}.cs:last-child{margin-bottom:0;}
+.csl{font-size:9.5px;font-weight:500;color:var(--red);letter-spacing:1.5px;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.csl::after{content:'';flex:1;height:1px;background:var(--red-mid);}
+.chips{display:flex;flex-wrap:wrap;gap:7px;}
+.chip{background:var(--rose);border:1px solid var(--border);border-radius:7px;padding:7px 11px;font-size:12px;}
+.chip-l{color:var(--text-light);font-size:10px;margin-bottom:2px;}.chip-v{font-weight:500;color:var(--text);}
+.career-list,.alist{display:flex;flex-direction:column;gap:5px;}
+.crow{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.6;}
+.cdot{width:5px;height:5px;border-radius:50%;background:var(--red-mid);flex-shrink:0;margin-top:7px;}
+.aitem{background:var(--rose);border-left:3px solid var(--red);border-radius:0 7px 7px 0;padding:8px 11px;font-size:12.5px;line-height:1.6;}
+.schips{display:flex;flex-wrap:wrap;gap:5px;}
+.schip{font-size:11px;padding:4px 10px;border-radius:20px;background:#fff;border:1px solid var(--border);color:var(--text-mid);}
+.rbox{background:var(--rose);border-radius:9px;padding:13px;border:1px solid var(--bsoft);}
+.rsbox{background:#fff;border-radius:9px;padding:13px;border:1px solid var(--border);}
+.rbox p,.rsbox p{font-size:12.5px;line-height:1.85;color:var(--text);}
+.cdiv{border:none;border-top:1px solid var(--bsoft);margin:13px 0;}
+.c-footer{border-top:1px solid var(--bsoft);padding:12px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;background:var(--rose);}
+.cons-info{display:flex;align-items:center;gap:9px;}
+.cons-av{width:30px;height:30px;border-radius:50%;background:var(--red-light);border:1px solid var(--red-mid);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:500;color:var(--red);}
+.cname-t{font-size:12.5px;font-weight:500;}.ccontact-t{font-size:10.5px;color:var(--text-light);margin-top:1px;}
+.mbadge{display:flex;align-items:center;gap:5px;}
+.mbadge-m{width:18px;height:18px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Noto Serif JP',serif;font-size:8px;}
+.mbadge-t{font-family:'Noto Serif JP',serif;font-size:11px;color:var(--red);letter-spacing:1.5px;}
+.doclink{font-size:12px;font-weight:500;color:#fff;background:var(--red);text-decoration:none;display:flex;align-items:center;gap:5px;padding:7px 13px;border-radius:7px;}
+.page-footer{margin-top:14px;font-size:11px;color:var(--text-light);text-align:center;}
+</style>
+</head>
+<body>
+<div class="page-header">
+  <div class="logo-m">m</div>
+  <div class="logo-t">morich</div>
+</div>
+<div class="card-wrap">
+  <div class="c-header">
+    <div class="name-band">
+      <div class="avatar">日向</div>
+      <div>
+        <div class="hname">日向亮介様</div>
+        <div class="hname-kana">ひゅうが（かめい）</div>
+        
+      </div>
+    </div>
+    <div class="ctags-wrap"><div class="ctags"><span class="ctag">経営視点×HR</span><span class="ctag">組織再建</span><span class="ctag">事業開発</span><span class="ctag">本質的課題解決</span><span class="ctag">全体最適</span></div></div>
+  </div>
+  <div class="c-body">
+    <div class="cs"><div class="csl">基本情報</div><div class="chips"><div class="chip"><div class="chip-l">現職</div><div class="chip-v">ミイダス株式会社</div></div><div class="chip"><div class="chip-l">役職</div><div class="chip-v">事業開発</div></div><div class="chip"><div class="chip-l">現年収</div><div class="chip-v">1450万円</div></div></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">略歴</div><div class="career-list"><div class="crow"><div class="cdot"></div><div>株式会社建設システムにて人事（採用・教育・労務・制度企画）、経営企画、新規事業開発を兼務</div></div><div class="crow"><div class="cdot"></div><div>株式会社ウェイズテック（建設システム子会社）に社長として出向。M&amp;A後の混乱期を乗り越え組織を再建・成長させる</div></div><div class="crow"><div class="cdot"></div><div>約4年で12名から50名規模へ組織をグロースさせ、子会社の経営を軌道に乗せる</div></div><div class="crow"><div class="cdot"></div><div>2025年よりミイダス株式会社に入社、事業開発を担当。入社直後に市場分析に基づき非現実的な事業計画を中止・方向転換させる提言を実行</div></div></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">主な実績</div><div class="alist"><div class="aitem">M&amp;A後に12名まで半減した子会社組織を、社長として約4年で50名規模に再建・グロース</div><div class="aitem">入社わずか2週間で事業計画の非現実性を市場分析に基づき指摘し、計画中止と現実的な方向転換を経営層へ提言・実行</div><div class="aitem">建設システム社にて防災ソリューション開発や大学との産学連携プロダクト開発など複数の新規事業を立ち上げ</div><div class="aitem">人事領域では採用・教育・労務・制度企画を横断的に担い、組織全体の最適化を通じた企業成長に貢献</div></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">スキル</div><div class="schips"><span class="schip">組織マネジメント・組織再建（社長として12名→50名規模へのグロース経験）</span><span class="schip">事業分析・戦略策定（市場データに基づく冷静かつ迅速な事業判断）</span><span class="schip">新規事業開発（防災ソリューション、産学連携プロダクト等の立ち上げ）</span><span class="schip">人事全般（採用・教育・労務・制度企画の実務経験）</span><span class="schip">経営企画・経営支援（HR領域に留まらない包括的な経営課題への対応）</span><span class="schip">ボトムアップの提言力・推進力（経営層への課題提起と実行まで完遂できる当事者意識）</span><span class="schip">ステークホルダーマネジメント（子会社経営・大学連携等における多様な関係者との協働）</span></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">推薦ポイント</div><div class="rbox"><p>日向様は「人事×事業開発」を軸に、経営者目線で組織と事業の両輪を動かせる、非常に稀有なプロフェッショナルです。最大の強みは、M&amp;A後の混乱期にあった子会社を社長として引き受け、12名から50名規模へと4年で再建・成長させた揺るぎない実行力。指示を待つのではなく、自ら課題を発掘し、データと論理に基づいて経営層へ提言し、最後まで責任を持ってやり遂げる姿勢は一貫しています。現職でも入社2週間で事業計画の問題点を指摘し方向転換させたエピソードは、その分析力と当事者意識の高さを如実に物語っています。温かみと静かな情熱を内に秘めた誠実な人柄も魅力のひとつ。「採用するだけでなく、企業の成長ごと支援したい」という確固たる哲学を持つ日向様は、成長フェーズにある企業の経営・事業開発・組織構築を本気で推進したい方にとって、まさに求めていた人材となるはずです。ぜひ一度お会いいただければと確信しております。</p></div></div>
+    <hr class="cdiv"><div class="cs"><div class="csl">転職理由</div><div class="rsbox"><p>現職では、社内カルチャーや、限定的な事業方針が自身の価値観・キャリア志向と合わないと判断し、転職を決意。「採用に留まらず、経営全体を支援することで企業は成長する」という信念のもと、より本質的な経営支援や事業開発に深く携われる環境を求めている。</p></div></div>
+  </div>
+  <div class="c-footer">
+    <div></div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a class="doclink" href="https://drive.google.com/drive/folders/1qn7hGSTuj9dV9k_fUJWkKF8VBClHz3mn" target="_blank"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>履歴書・職務経歴書</a>
+      <div class="mbadge"><div class="mbadge-m">m</div><div class="mbadge-t">morich</div></div>
+    </div>
+  </div>
+</div>
+<div class="page-footer">このページはmorichからのご推薦資料です。取り扱いにご注意ください。</div>
+</body>
+</html>
